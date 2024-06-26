@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'reservation',
-    'restaurant'
+    'LittleLemonAPI',
+    "rest_framework.authtoken",
+    'djoser',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,5 @@ STATIC_URL = '../static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DJOSER={"USER_ID_FIELD":"username"}
